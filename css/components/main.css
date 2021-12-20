@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary-color: #FAFAFA;
+    --secondary-color: #171717;
+    --light-blue: #00419d;
+    --dark: #001737;
+    --backround-box: #e7e7e7;
+    --white: #ffffff;
+    --third-color: #fbebcb;
+    --light-font: 300;
+    --reg-font: 400;
+    --bold-font: 700;
+    --text: 1.4rem;
+    --subtitle: 1.8rem;
+    --title: 2.4rem;
+    font-family: 'Josefin Slab', serif;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas:
+    'header header header'
+    'main main main'
+    ;
+    background-color: var(--primary-color);
+}
+main {
+    grid-area: main;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-container {
+}
+.main-container .main-container-title h1 {
+    font-size: 5rem;
+    line-height: 70px;
+    margin: 25px 0 0;
+    color: var(--secondary-color);
+}
+.main-container .main-container-title h2 {
+    font-size: 2.4rem;
+    line-height: 40px;
+    margin: 25px 0 0;
+    color: var(--secondary-color);
+}
+.main-container .main-container-title p {
+    font-size: 1.8rem;
+    line-height: 25px;
+    margin: 25px 0 0;
+    color: var(--secondary-color);
+}
+.main-container a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.main-container-button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: 25px 0 0;
+}
+.main-container-button div {
+    width: 100px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container-button div a {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+
+
+
+

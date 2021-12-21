@@ -36,27 +36,35 @@ main {
     grid-area: main;
     width: 80%;
     margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 50px;
+}
+main a {
+    text-decoration: none;
 }
 .main-container .main-container-title h1 {
     font-size: 5rem;
     line-height: 70px;
+    font-weight: 300;
     margin: 25px 0 0;
     color: var(--secondary-color);
 }
 .main-container .main-container-title h2 {
     font-size: 2.4rem;
     line-height: 40px;
+    font-weight: 500;
     margin: 25px 0 0;
     color: var(--secondary-color);
 }
 .main-container .main-container-title p {
     font-size: 1.8rem;
     line-height: 25px;
+    font-weight: 300;
     margin: 25px 0 0;
     color: var(--secondary-color);
 }
 .main-container a {
-    text-decoration: none;
     color: var(--secondary-color);
 }
 .main-container-button {
@@ -77,6 +85,32 @@ main {
 .main-container-button div a {
     color: var(--primary-color);
     font-size: 1.8rem;
+}
+.main-about {
+    border-top: 1px solid var(--secondary-color);
+    padding-block-start: 50px;
+}
+.main-about .main-about-img {
+    width: 100%;
+}
+.main-about-img img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 300px;
+}
+.main-about-info p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+.main-about-title {
+    display: flex;
+    justify-content: center;
+}
+.main-about-title h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--secondary-color);
 }
 
 

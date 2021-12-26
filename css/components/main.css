@@ -42,36 +42,51 @@ main {
 }
 main a {
     text-decoration: none;
+    color: var(--secondary-color);
+}
+.main-container {
+    display: grid;
+    grid-auto-columns: auto;
+    row-gap: 40px;
+}
+.main-container-title {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 40px;
 }
 .main-container .main-container-title h1 {
     font-size: 5rem;
     line-height: 70px;
     font-weight: 300;
-    margin: 25px 0 0;
     color: var(--secondary-color);
 }
 .main-container .main-container-title h2 {
     font-size: 2.4rem;
     line-height: 40px;
     font-weight: 500;
-    margin: 25px 0 0;
     color: var(--secondary-color);
 }
 .main-container .main-container-title p {
     font-size: 1.8rem;
     line-height: 25px;
     font-weight: 300;
-    margin: 25px 0 0;
     color: var(--secondary-color);
 }
 .main-container a {
     color: var(--secondary-color);
 }
+.main-container-social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+.main-container-social .main-social-icon a img {
+    width: 30px;
+}
 .main-container-button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    margin: 25px 0 0;
 }
 .main-container-button div {
     width: 100px;
@@ -87,11 +102,14 @@ main a {
     font-size: 1.8rem;
 }
 .main-about {
-    border-top: 1px solid var(--secondary-color);
-    padding-block-start: 50px;
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 40px;
 }
 .main-about .main-about-img {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .main-about-img img {
     width: 100%;
@@ -106,6 +124,8 @@ main a {
 .main-about-title {
     display: flex;
     justify-content: center;
+    border-block-end: 1px solid var(--secondary-color);
+    padding-block-end: 30px;
 }
 .main-about-title h3 {
     font-size: 2.4rem;

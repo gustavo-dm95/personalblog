@@ -13,14 +13,17 @@ html {
     --medium-font: 200;
     --reg-font: 300;
     --bold-font: 500;
-    --text: 1.4rem;
-    --subtitle: 1.8rem;
-    --title: 2.4rem;
+    --small: 1rem;
+    --normal: 1.4rem;
+    --medium: 1.8rem;
+    --regular: 2.4rem;
+    --larger: 4.8rem;
     font-family: 'Josefin Slab', serif;
 }
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    row-gap: 5vh;
     width: 100%;
     background-color: var(--primary-color);
 }
@@ -37,39 +40,55 @@ a {
     color: var(--secondary-color);
 }
 
-/* ----------> HEADER SECTION <---------- */
-
-/*.header-container {
-    
-}*/
-
-.header-navbar {
+.main-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
 }
-.header-navbar-items {
-    display: none;
-    position: absolute;
+
+/* MAIN CONTAINER HERO*/
+
+.main-container-hero {
+    width: 95%;
+    margin: 0 auto;
 }
-.header-navbar-logo {
-    display: flex;
-    justify-content: center;
-    grid-column: 2 / 3;
+.main-container-hero div h1 {
+    font-size: var(--larger);
+    font-weight: var(--bold-font);
 }
-.header-navbar-logo a {
-    display: flex;
+.main-container-hero div h2 {
+    font-size: var(--medium);
 }
-.header-navbar-logo a img {
-    align-self: center;
-    width: 55px;
+.main-container-hero div p {
+    font-size: var(--normal);
 }
-.navbar-menu-icon, .navbar-close-icon {
-    position: absolute;
-    grid-column: 1 / 2;
+.main-hero {
+    display: grid;
+    row-gap: 20px;
+    place-items: center;
 }
-.input-checkbox, .navbar-close-icon {
-    display: none;
+.main-hero img {
+    width: 70%;
+    max-width: 330px;
+    border-radius: 50%;
 }
+
+/* MAIN CONTAINER PORTFOLIO*/
+
+.main-container-portfolio {
+    width: 95%;
+    margin: 0 auto;
+}
+.main-portfolio-title {
+    max-width: 700px;
+    text-align: center;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.main-portfolio-title h3 {
+    font-size: var(--regular);
+}
+
+
+
 
 
 

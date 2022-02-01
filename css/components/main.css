@@ -65,6 +65,7 @@ a {
     display: grid;
     row-gap: 20px;
     place-items: center;
+    text-align: center;
 }
 .main-hero img {
     width: 70%;
@@ -72,14 +73,18 @@ a {
     border-radius: 50%;
 }
 
-/* MAIN CONTAINER PORTFOLIO*/
+/* MAIN CONTAINER PORTFOLIO */
 
 .main-container-portfolio {
     width: 95%;
     margin: 0 auto;
 }
+
+/* MAIN PORTFOLIO TITLE*/
+
 .main-portfolio-title {
     max-width: 700px;
+    margin: 0 auto;
     text-align: center;
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -87,7 +92,39 @@ a {
     font-size: var(--regular);
 }
 
+/* MAIN PORTFOLIO CARDS*/
 
+.main-portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 350px));
+    place-content: center;
+    gap: 5vh;
+    margin-top: 5vh;
+}
+.portfolio-card {
+    height: 200px;
+    display: grid;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+.portfolio-card.google-clone {
+    background-image: url(../img/google-clone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-card.batatabit {
+    background-image: url(../img/batatabit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-card.yard-sale {
+    background-image: url(../img/yardsale.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 
 

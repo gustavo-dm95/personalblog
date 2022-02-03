@@ -42,7 +42,8 @@ a {
 
 .main-container {
     display: grid;
-    row-gap: 50px;
+    row-gap: 10vh;
+    margin-top: 10vh;
 }
 
 /* MAIN CONTAINER HERO*/
@@ -50,6 +51,7 @@ a {
 .main-container-hero {
     width: 95%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 .main-container-hero div h1 {
     font-size: var(--larger);
@@ -124,6 +126,15 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.portfolio-card.not-found {
+    background-image: url(../img/404-not-found.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-card div > div {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 50%, rgba(255,255,255,0) 100%);
 }
 
 

@@ -1,0 +1,38 @@
+.main-hero {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    text-align: start;
+    align-items: center;
+    justify-items: flex-start;
+    /* place-items: start; */
+    row-gap: 0px;
+    column-gap: 5vw;
+}
+.main-hero h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 6.8rem;
+}
+.main-hero img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: 100%;
+}
+.main-hero h2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.main-hero p {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.main-container-hero div h1 {
+    font-size: 5.8rem;
+    font-weight: var(--bold-font);
+}
+.main-container-hero div h2 {
+    font-size: 2.4rem;
+}
+.main-container-hero div p {
+    font-size: 1.8rem;
+}

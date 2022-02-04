@@ -133,8 +133,19 @@ a {
     background-size: cover;
     background-position: center;
 }
-.portfolio-card div > div {
+.portfolio-card > div {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: end;
     background: linear-gradient(0deg, rgba(2,0,36,1) 50%, rgba(255,255,255,0) 100%);
+}
+.portfolio-card h4 {
+    font-size: var(--medium);
+    font-weight: var(--bold-font);
+}
+.portfolio-card img {
+    width: 42px;
 }
 
 

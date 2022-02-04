@@ -53,10 +53,21 @@ a {
     align-self: center;
     width: 55px;
 }
-.navbar-menu-icon, .navbar-close-icon {
+.navbar-menu-icon {
     position: absolute;
     grid-column: 1 / 2;
 }
-.input-checkbox, .navbar-close-icon {
+.navbar-close-icon {
+    position: absolute;
+    grid-column: 1 / 2;
+}
+.input-checkbox {
+    display: none;
+}
+
+.navbar-close-icon {
+    display: none;
+}
+label {
     display: none;
 }

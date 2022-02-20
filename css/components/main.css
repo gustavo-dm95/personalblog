@@ -25,7 +25,8 @@ body {
     grid-template-rows: auto 1fr auto;
     row-gap: 5vh;
     width: 100%;
-    background-color: var(--primary-color);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 65%, rgba(82,82,82,1) 100%);
 }
 h1,
 h2,
@@ -53,14 +54,14 @@ a {
     margin: 0 auto;
     max-width: 1200px;
 }
-.main-container-hero div h1 {
+.main-hero h1 {
     font-size: var(--larger);
     font-weight: var(--bold-font);
 }
-.main-container-hero div h2 {
+.main-hero h2 {
     font-size: var(--medium);
 }
-.main-container-hero div p {
+.main-hero p {
     font-size: var(--normal);
 }
 .main-hero {
@@ -71,7 +72,7 @@ a {
 }
 .main-hero img {
     width: 70%;
-    max-width: 330px;
+    max-width: 265px;
     border-radius: 50%;
 }
 
@@ -101,7 +102,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(220px, 350px));
     place-content: center;
     gap: 5vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 .portfolio-card {
     height: 200px;
@@ -138,7 +139,9 @@ a {
     flex-direction: column;
     height: 50%;
     justify-content: end;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 50%, rgba(255,255,255,0) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    padding: 5px 15px;
 }
 .portfolio-card h4 {
     font-size: var(--medium);

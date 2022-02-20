@@ -1,3 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary-color: #0f0f0f;
+    --secondary-color: #FAFAFA;
+    --light-font: 100;
+    --medium-font: 200;
+    --reg-font: 300;
+    --bold-font: 500;
+    --small: 1rem;
+    --normal: 1.4rem;
+    --medium: 1.8rem;
+    --regular: 2.4rem;
+    --larger: 4.8rem;
+    --largest: 6.8rem;
+    font-family: 'Josefin Slab', serif;
+}
+/* --- HEADER SECTION --- */
+.header-navbar-logo a img {
+    align-self: center;
+    width: 75px;
+}
+/* --- MAIN SECTION --- */
 .main-hero {
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(3, auto);
@@ -11,7 +40,9 @@
 .main-hero h1 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    font-size: 6.8rem;
+    font-size: var(--larger);
+    font-weight: var(--bold-font);
+    align-self: flex-end;
 }
 .main-hero img {
     grid-column: 1 / 2;
@@ -21,18 +52,11 @@
 .main-hero h2 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    font-size: var(--regular);
 }
 .main-hero p {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-}
-.main-container-hero div h1 {
-    font-size: 5.8rem;
-    font-weight: var(--bold-font);
-}
-.main-container-hero div h2 {
-    font-size: 2.4rem;
-}
-.main-container-hero div p {
-    font-size: 1.8rem;
+    font-size: var(--medium);
+    align-self: flex-start;
 }
